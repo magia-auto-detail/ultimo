@@ -5,7 +5,7 @@ import { Resend } from "resend";
 export const testResendKey = action({
   args: { apiKey: v.string() },
   returns: v.any(),
-  handler: async (ctx, args) => {
+  handler: async (_ctx, args) => {
     try {
       const resend = new Resend(args.apiKey);
       const { data, error } = await resend.emails.send({
