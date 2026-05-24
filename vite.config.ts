@@ -12,6 +12,5 @@ export default defineConfig({
     }),
     tanstackStart(),
     viteReact(),
-    cloudflare(), // ✅ ADD THIS
   ],
 })
