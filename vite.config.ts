@@ -11,10 +11,12 @@ export default defineConfig({
     allowedHosts: true,
   },
   plugins: [
-  tailwindcss(),
-  tsConfigPaths({
-    projects: ['./tsconfig.json'],
-  }),
-  viteReact(),
-],
+    tailwindcss(),
+    tsConfigPaths({
+      projects: ['./tsconfig.json'],
+    }),
+    tanstackStart(),
+    viteReact(),
+    vercel(),
+  ],
 })
