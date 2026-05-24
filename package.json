@@ -8,7 +8,7 @@
     "dev:web": "vite dev",
     "dev:ts": "tsc -b -w",
     "dev:convex": "npx convex dev",
-    "build": "npx convex codegen --typecheck=never && vite build",
+    "build": "npx convex codegen --typecheck disable && vite build && npx nitro build",
     "start": "node .output/server/index.mjs",
     "format": "prettier --write .",
     "lint": "tsc && eslint .  --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
