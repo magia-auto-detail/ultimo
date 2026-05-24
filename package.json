@@ -8,7 +8,7 @@
     "dev:web": "vite dev",
     "dev:ts": "tsc -b -w",
     "dev:convex": "npx convex dev",
-    "build": "npx convex codegen --typecheck=disable && vite build",
+    "build": "npx convex codegen --typecheck disable && NITRO_PRESET=cloudflare-pages vite build",
     "start": "node .output/server/index.mjs",
     "format": "prettier --write .",
     "lint": "tsc && eslint .  --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
