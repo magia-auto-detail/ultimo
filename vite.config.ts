@@ -4,7 +4,6 @@ import tsConfigPaths from 'vite-tsconfig-paths'
 import tailwindcss from '@tailwindcss/vite'
 import viteReact from '@vitejs/plugin-react'
 
-import cloudflare from '@tanstack/react-start-cloudflare'
 
 export default defineConfig({
   server: {
@@ -19,6 +18,5 @@ export default defineConfig({
     }),
     tanstackStart(),
     viteReact(),
-    cloudflare(), // ✅ REQUIRED for Workers SSR
-  ],
+    ],
 })
